@@ -557,7 +557,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
     color: #fff;
     background-color: #0a2233;
     border: none;
-    border-radius: 6px;
+    border-radius: 60px;
     display: inline-block;
     -webkit-box-shadow: 0 3px 6px rgba(91, 130, 148, 0.08);
     box-shadow: 0 3px 6px rgba(91, 130, 148, 0.08);
@@ -824,7 +824,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
     margin: 0 0 10px;
     border-radius: 6px;
     color: #172b43;
-    font-size: 16px;
+    font-size: 14px;
     outline: 0;
     background: #fff;
     -webkit-box-shadow: 0 3px 6px rgba(91, 130, 148, 0.08);
@@ -2045,6 +2045,7 @@ html body .top-header.header-2 .navbutton {
     font-size: 16px;
     font-weight: 400;
     margin-left: 15px;
+    border-radius: 20px;
 }
 
 .icon-bar {
