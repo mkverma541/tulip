@@ -229,11 +229,20 @@ html body .top-header.header-2 .sticky .nav-link:hover {
     position: relative;
     overflow: hidden;
     background: url(../images/hero/hero-bg.png) #fff;
-    padding-top: 170px;
+    padding-top: 120px;
     padding-bottom: 170px;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+}
+
+.hero-section .item img {
+    min-height: 570px;
+    object-fit: cover;
+}
+
+a {
+    cursor: pointer;
 }
 
 .header-heading {
