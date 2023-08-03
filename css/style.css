@@ -131,6 +131,11 @@ section.dark {
     border-radius: 42px;
 }
 
+.btn-primary:hover {
+    background-color: #ca8c2a;
+    border-color: #ca8c2a;
+}
+
 .v-center {
     align-self: center;
 }
@@ -471,6 +476,7 @@ a {
     position: relative;
     border: 1px solid #fee4e5;
     cursor: grab;
+    min-height: 247px;
 }
 
 .amenities-card-icon-section {
