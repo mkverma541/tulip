@@ -4,10 +4,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $phone = $_POST["phone"];
+    $message = $_POST["message"];
 
-    $to = "contact@onlinepffund.com"; // Replace with the actual recipient's email address
+    $to = "mkverma541@gmail.com"; // Replace with the actual recipient's email address
     $subject = "New Enquiry";
-    $message = "Name: $name\nEmail: $email\nPhone: $phone";
+    $message = "Name: $name\nEmail: $email\nPhone: $phone\nMessage: $message\n";
 
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";

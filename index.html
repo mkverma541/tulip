@@ -51,7 +51,7 @@
                     </ul>
                 </div>
 
-                <a href="tel:9871700342" class="phone"><span><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png"></span>9871 700 342</a>
+                <a href="tel:9102350235" class="phone"><span><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png"></span>9102 350 235</a>
                 <div class="extrabtn"> <a class="bttn button1 navbutton" data-toggle="modal" data-target="#brochureModal"> Enquiry Now</a> </div>
             </div>
         </nav>
@@ -194,10 +194,10 @@
     <section class="floor-plan-section pad-tb wow fadeIn" id="floorPlans">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
+                <div class="col-lg-9">
                     <div class="common-heading">
-                        <h2>Luxury Residences</h2>
-                        <p>For Your Better Understanding. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h2>Floor Plans </h2>
+                        <p>Discover Your Ideal Space: Explore our Diverse Range of Thoughtfully Designed Floor Plans. Find the Perfect Home that Fits Your Lifestyle.</p>
                     </div>
                 </div>
             </div>
@@ -352,7 +352,7 @@
                         <img src="images/common/header.png" alt="text" class="img-fluid mb30">
                         <h2 class="mb15">Your Dream House is Waiting For You</h2>
                         <p>Are You Ready to Buy Dream Flat? Find the Perfect Home for You Today!</p>
-                        <a href="tel:+9871700342" class="cta learnmore mt30">Call Now</a>
+                        <a href="tel:+9102350235" class="cta learnmore mt30">Call Now</a>
                     </div>
                 </div>
                 <div class="col-lg-4 pl0" id="form">
@@ -360,7 +360,7 @@
                         <div class="form-header">
                             <h2><span>Get a Callback</span></h2>
                         </div>
-                        <form id="contactForm" data-toggle="validator" class="shake" method="post" action="mail.php">
+                        <form action="mail.php" method="post">
                             <div class="row">
                                 <div class="fieldsets col-sm-12">
                                     <input type="text" id="name" placeholder="Enter name" required data-error="Please fill Out" name="name">
@@ -376,11 +376,9 @@
                                 </div>
                             </div>
                             <div class="fieldsets">
-                                <textarea id="message" rows="4" placeholder="Enter your message" required></textarea>
-                                <div class="help-block with-errors"></div>
+                                <textarea id="message" rows="4" placeholder="Enter your message" name="message" required></textarea>
                             </div>
                             <button type="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit <span class="circle"></span></button>
-                            <div id="msgSubmit" class="h3 text-center hidden"></div>
                             <div class="clearfix"></div>
                             <p class="trm"><i class="fas fa-lock"></i>We hate spam, and we respect your privacy.</p>
                         </form>
@@ -399,7 +397,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-- text-center pt20">
-                            <p>Powered by Elegant Home </p>
+                            <p>Powered by Elegant Homz </p>
                         </div>
                     </div>
                 </div>
@@ -430,7 +428,11 @@
                         </div>
                         <div class="form-group">
                             <label>Phone</label>
-                            <input type="number" class="form-control" maxlength="10" required>
+                            <input type="number" class="form-control" maxlength="10" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <input type="text" class="form-control" name="message" required>
                         </div>
                         <div>
                             <input type="submit" value="Submit" class="btn btn-primary">
@@ -467,6 +469,10 @@
                         <div class="form-group">
                             <label>Phone</label>
                             <input type="text" class="form-control" name="phone" maxlength="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <input type="text" class="form-control" name="message" required>
                         </div>
                         <div>
                             <input type="submit" value="Submit" class="btn btn-primary">
@@ -505,9 +511,12 @@
                             <label>Phone</label>
                             <input type="text" class="form-control" name="phone" maxlength="10" required>
                         </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <input type="text" class="form-control" name="message" required>
+                        </div>
                         <div>
                             <input type="submit" value="Submit" class="btn btn-primary">
-
                         </div>
                     </form>
                 </div>
@@ -516,7 +525,7 @@
     </div>
 
 
-    <a href="https://api.whatsapp.com/send?phone=919389736199&amp;text=Hi,%20I%20am%20looking%20for%20a%20Chardham%20package,%20can%20you%20help%20me?" class="whatapp_btn" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=919102350235&amp;text=Hi" class="whatapp_btn" target="_blank">
         <img src="images/whatsapp.svg" width="45px">
     </a>
 
@@ -540,12 +549,17 @@
     <script>
         new WOW().init();
 
+        document.getElementById('openModalBtn').addEventListener('click', function() {
+            var modal = new bootstrap.Modal(document.getElementById('brochureModal'));
+            modal.show();
+        });
+
         function openModal() {
             var modal = document.getElementById('brochureModal');
             modal.style.display = 'block';
         }
 
-        //  setTimeout(openModal, 10000); // 20000 milliseconds = 20 seconds
+        setTimeout(openModal, 20000); // 20000 milliseconds = 20 seconds
     </script>
 
 </body>
